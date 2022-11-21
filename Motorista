@@ -1,0 +1,20 @@
+package P2Java;
+
+ class Motorista extends Usuario { // aqui estamos utilizando o conceito de herança para herdar os atributos do usuario
+    private String tipoCarta;
+    private String carroUtilizado;
+
+    public String getTipoCarta() {
+        return tipoCarta;
+    }
+    public void setTipoCarta(String tipoCarta) {
+        this.tipoCarta = tipoCarta;
+    }
+    public String getCarroUtilizado() {
+        return carroUtilizado;
+    }
+    public void setCarroUtilizado(String carroUtilizado) {
+        this.carroUtilizado = carroUtilizado;
+    }
+    
+}
