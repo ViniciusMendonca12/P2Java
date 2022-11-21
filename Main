@@ -1,0 +1,26 @@
+package P2Java;
+//dupla: Vinícius Mendonça e Jonas Godoi
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        Passageiro tonho = new Passageiro();
+        tonho.setNome("Tonho");
+        tonho.setIdade(18);
+        tonho.setSaldo(196.4);
+
+        
+        Motorista gaiz = new Motorista();
+        gaiz.setCarroUtilizado("Celta");
+        gaiz.setIdade(18);
+        gaiz.setNome("Gaiz");
+        gaiz.setTipoCarta("AB");
+
+
+        tonho.Viajar(40);
+
+
+        Interface prova = new Avaliacao(); // aqui estamos instanciado o objeto utilizando os conceitos de poliformia 
+        prova.AvaliarViagen("Viagem Muito Boa", prova);
+    }
+    
+}
