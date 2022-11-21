@@ -1,0 +1,20 @@
+package P2Java;
+
+ abstract class Usuario { //aqui estamos definindo essa classe como abstrata
+    private String nome;       // aqui estamos definindo pivate para depois fazer o encapsulamento dos atributos.
+    private int idade;
+
+    public String getNome() { // metodo get do atributo encapsulado
+        return nome;
+    }
+    public void setNome(String nome) { //metodo ser do atributo encapsulado
+        this.nome = nome;
+    }
+    public int getIdade() {
+        return idade;
+    }
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+}
