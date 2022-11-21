@@ -1,0 +1,6 @@
+package P2Java;
+
+interface Interface{  // aqui estamos criando uma interface com um metodo para ser implementado depois
+    public  String AvaliarViagen(String avaliacao, Interface i);
+        
+}
