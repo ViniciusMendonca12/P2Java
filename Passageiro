@@ -1,0 +1,27 @@
+package P2Java;
+
+class Passageiro extends Usuario{
+    private double saldo;
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
+    void Viajar(double KmDaViagem)throws Exception{ // aqui estamos utilzando as exeptions para capturar erros de acordo com a nossa validação
+        double preco = KmDaViagem * 4.91;
+        if(this.getSaldo() < preco){
+            Exception erro = new Exception();
+            throw erro ;
+        }else{
+            System.out.println("Foi realizada a viagem de "+ this.getNome()+" na distância de "+ KmDaViagem);
+            System.out.println("O valor a ser pago é de: "+ preco+ " R$");
+
+
+        }
+    }
+
+}
