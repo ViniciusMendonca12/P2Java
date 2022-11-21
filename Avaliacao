@@ -1,1 +1,9 @@
+package P2Java;
 
+public class Avaliacao implements Interface { // aqui estamos implementando a interface que haviamos criado
+
+    public  String AvaliarViagen(String avaliacao, Interface i){ // chamamos como parametro a Interface para fazer o polimorfismo da classe
+        return avaliacao;
+    }
+    
+}
